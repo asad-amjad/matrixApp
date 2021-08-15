@@ -1,0 +1,38 @@
+{/* <MatrixInputSize setMatrixSize={object => setMatrixSize(object)} />
+
+
+<input
+  type="number"
+  defaultValue={2}
+  onChange={e => {
+    const rows = parseInt(e.target.value)
+    // if we only want matrix of size between 2 and 8
+    if (2 <= rows && rows <= 8) {
+      setMatrixSize(prevSize => ({
+        ...prevSize,
+        rows: rows,
+      }))
+    }
+  }}
+/>
+
+
+<form onSubmit={handleSubmit}>
+  {matrix.map((row, indexRow = 1) => {
+    return (
+      <MatrixRow key={indexRow}>
+        {row.map((item, indexColumn = 1) => {
+          return (
+            <input
+              key={indexRow + " " + indexColumn}
+              type="text"
+              defaultValue={0}
+              name={indexRow + "," + indexColumn}
+            />
+          )
+        })}
+      </MatrixRow>
+    )
+  })}
+  <button>{"Save A"}</button>
+</form> */}
